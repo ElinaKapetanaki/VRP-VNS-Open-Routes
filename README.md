@@ -26,11 +26,12 @@ The cost of the entire transportation activity is computed based on the total to
 The design of routes aims to minimize the total mixed ton-kilometers, considering both the truck's deadweight and the weight of the transported cargo.
 
 ### Algorithmic Approach:
-Integration of VRP Algorithm and Variable Neighborhood Search (VNS) for dynamic exploration of solution spaces.
-Incorporation of Local Search operators, including Two-Opt, Swaps and Relocations for route optimization.
+* Integration of VRP Algorithm especially designed for Open Routes and ton - kilometers. 
+* Variable Neighborhood Search (VNS) for dynamic exploration of solution spaces after the initial solution creation.
+  * Incorporation of Local Search operators, including Two-Opt, Swaps and Relocations.
 
 ## Excecution of the program
-To run the program, use the command `python main.py`. An ***output.txt*** will be created containing the ***problem's solution (total tonkilometers and the routes in the solution produced)***. In this repository you can find the output.txt created for the specifications provided in the Instance.txt
+To run the program, use the command `python main.py`. An ***output.txt*** will be created containing the ***problem's solution (total tonkilometers and the routes in the solution produced)***. In this repository you can find the output.txt created for the specifications provided in the Instance.txt. By using the command `python sol_checker.py` you can test if the solution in the output.txt generated is correct. 
 
 ## Team of developers
 | Full Name | Github Account |
